@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <!--  seccion de la barra de la pagina-->
+    <header class="head">
+        <div class="logo">
+            <img src="img/Logo tipo de color blanco.png" alt="" width="80px">
+        </div>
+    
+        <nav class="navbar">
+            <a href="Index.html">Inicio</a>
+            <a href="Galerianew.html">Productos</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+    <!--  seccion de la barra de la pagina-->
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/BTI.png" alt="">
+                    </div>
+                    <p class="descripcion">Flayers</p>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/f.elconfidencial.com_original_9e0_241_f7e_9e0241f7e7e59dc6a530736e4da4f9f6.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Impresion de logotipo</p>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/folletos-publicitarios.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Folletos
+                    </p>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/il_340x270.2679632055_fd2b.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Llaveros</p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/negocio-de-imprenta.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Imprenta</p>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/98_tarjetas_fte_y_vta_btete.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Trajetas de presentacion</p>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/78161284_3221623511197615_5025745806636875776_n.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Lonas publicitarias</p>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Trofeo.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Trofeo</p>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo"></h2>
+        
+
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Cantidad</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
